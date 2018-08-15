@@ -9,8 +9,8 @@
     <div class="row">
         <form role="search" name="searchForm">
             <div class="input-group">
-                <input type="text" class="form-control" ng-model="assetName" ng-change="searchWeather()" placeholder="Enter city name.." required>
-                <span class="input-group-btn"><button type="submit" class="btn btn-info" ng-click="searchWeather()" ng-disabled="searchForm.$invalid">Search</button></span>
+                <input type="text" class="form-control" ng-model="app.cityName" placeholder="Enter city name.." required>
+                <span class="input-group-btn"><button type="button" class="btn btn-info" ng-click="app.searchWeather()" ng-disabled="searchForm.$invalid">Search</button></span>
             </div>            
         </form>
     </div>

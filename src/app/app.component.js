@@ -7,7 +7,7 @@ import '../style/app.css';
 const appComponent = {
     template: require('./app.html'),
     restrict: 'E',
-    controller: AppController,
+    controller: ['appService', 'weatherApiService', AppController],
     controllerAs: 'app'
 };
 
